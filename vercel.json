@@ -1,5 +1,3 @@
 {
-  "framework": null,
-  "buildCommand": "NODE_OPTIONS=--max-old-space-size=4096 npm run build",
-  "outputDirectory": ".vercel/output"
+  "buildCommand": "npm run build"
 }
