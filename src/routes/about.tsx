@@ -8,12 +8,12 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Family-owned renovation company with 20+ years of experience. Licensed, bonded and insured.",
+          "Family-owned renovation company with 5+ years of experience. Licensed, bonded and insured.",
       },
       { property: "og:title", content: "About Amador BuildPro Inc." },
       {
         property: "og:description",
-        content: "20+ years of premium renovation craftsmanship.",
+        content: "5+ years of premium renovation craftsmanship.",
       },
     ],
   }),
@@ -39,7 +39,7 @@ function AboutPage() {
             Built by a family. Trusted by hundreds of homeowners.
           </h1>
           <p className="mt-4 max-w-2xl text-primary-foreground/80">
-            Founded in 2004 by the Amador family, Amador BuildPro Inc. has grown from a two-man
+            Founded in 2022 by the Amador family, Amador BuildPro Inc. has grown from a two-man
             crew into one of the metro's most-trusted residential renovation contractors — without
             ever losing the small-shop attention to detail.
           </p>

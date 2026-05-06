@@ -32,32 +32,40 @@ export const Route = createFileRoute("/")({
 });
 
 const stats = [
-  { v: "20+", l: "Years experience" },
-  { v: "850+", l: "Projects completed" },
-  { v: "100%", l: "Licensed & insured" },
+  { v: "5+", l: "Years experience" },
+  { v: "50+", l: "Projects completed" },
   { v: "4.9★", l: "Client rating" },
 ];
+
+import kitchenImg from "@/assets/kitchen-remodel.png";
+import bathroomImg from "@/assets/bathroom-renovation.png";
+import flooringImg from "@/assets/flooring-install.png";
+import paintingImg from "@/assets/painting-interior.png";
 
 const services = [
   {
     icon: Hammer,
     title: "Kitchen Remodels",
     desc: "Custom cabinetry, countertops, lighting and full layout redesigns.",
+    img: kitchenImg,
   },
   {
     icon: Sparkles,
     title: "Bathroom Renovations",
     desc: "Modern showers, tile work, vanities and luxury finishes.",
+    img: bathroomImg,
   },
   {
     icon: Award,
     title: "Flooring Installation",
     desc: "Hardwood, engineered wood, LVP and large-format tile.",
+    img: flooringImg,
   },
   {
     icon: ShieldCheck,
     title: "Interior & Exterior Painting",
     desc: "Premium-grade paint, surface prep and warranty-backed finishes.",
+    img: paintingImg,
   },
 ];
 
@@ -78,9 +86,7 @@ function HomePage() {
         </div>
         <div className="container relative mx-auto px-4 py-24 md:py-32">
           <div className="max-w-2xl">
-            <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-medium text-gold">
-              <ShieldCheck className="h-3.5 w-3.5" /> Licensed · Bonded · Insured
-            </span>
+
             <h1 className="mt-5 font-display text-4xl md:text-6xl font-bold leading-[1.05]">
               Renovations built on <span className="text-gold">trust</span>,
               <br /> finished with <span className="text-gold">precision</span>.
@@ -147,13 +153,22 @@ function HomePage() {
           {services.map((s) => (
             <div
               key={s.title}
-              className="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-all hover:border-gold/60 hover:shadow-lg"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-gold/60 hover:shadow-lg"
             >
-              <div className="grid h-11 w-11 place-content-center rounded-lg bg-primary text-primary-foreground">
-                <s.icon className="h-5 w-5 text-gold" />
+              <div className="h-48 overflow-hidden">
+                <img
+                  src={s.img}
+                  alt={s.title}
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
               </div>
-              <h3 className="mt-4 font-display text-lg font-semibold">{s.title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+              <div className="p-6">
+                <div className="grid h-11 w-11 place-content-center rounded-lg bg-primary text-primary-foreground">
+                  <s.icon className="h-5 w-5 text-gold" />
+                </div>
+                <h3 className="mt-4 font-display text-lg font-semibold">{s.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+              </div>
               <div className="absolute inset-x-0 bottom-0 h-0.5 bg-gold scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
             </div>
           ))}
@@ -171,7 +186,7 @@ function HomePage() {
               A general contractor that treats your home like our own.
             </h2>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              We combine 20+ years of field experience with transparent pricing, daily site
+              We combine 5+ years of field experience with transparent pricing, daily site
               communication, and senior tradespeople on every job — no rotating subs, no hidden
               fees.
             </p>

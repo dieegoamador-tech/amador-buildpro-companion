@@ -40,9 +40,9 @@ export function SiteFooter() {
             Contact
           </h4>
           <ul className="mt-4 space-y-3 text-sm text-primary-foreground/80">
-            <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-gold" /> (555) 010-2024</li>
-            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-gold" /> hello@amadorbuildpro.com</li>
-            <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-gold" /> Serving the metro area</li>
+            <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-gold" /> (647) 882-5443</li>
+            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-gold" /> jamadorperez8@gmail.com</li>
+            <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-gold" /> Serving all GTA, Toronto</li>
           </ul>
         </div>
       </div>

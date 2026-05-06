@@ -22,10 +22,10 @@ export function SiteHeader() {
             <HardHat className="h-5 w-5 text-gold" />
           </span>
           <span className="flex flex-col leading-none">
-            <span className="font-display text-lg font-bold tracking-tight">
+            <span className="font-display text-xl font-bold tracking-tight">
               Amador <span className="text-gold">BuildPro</span>
             </span>
-            <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+            <span className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
               Inc. — Renovations
             </span>
           </span>

@@ -183,16 +183,16 @@ function ContactPage() {
         </div>
 
         <aside className="space-y-4">
-          <ContactCard icon={Phone} title="Call us" lines={["(555) 010-2024", "Mon–Sat · 8am–6pm"]} />
+          <ContactCard icon={Phone} title="Call us" lines={["(647) 882-5443", "Mon–Sat · 8am–6pm"]} />
           <ContactCard
             icon={Mail}
             title="Email"
-            lines={["hello@amadorbuildpro.com", "Replies within 1 business day"]}
+            lines={["jamadorperez8@gmail.com", "Replies within 1 business day"]}
           />
           <ContactCard
             icon={MapPin}
             title="Service area"
-            lines={["Greater metro area", "Residential & light commercial"]}
+            lines={["All GTA, Toronto", "Residential & light commercial"]}
           />
           <div className="rounded-2xl bg-primary text-primary-foreground p-6">
             <ShieldCheck className="h-6 w-6 text-gold" />
